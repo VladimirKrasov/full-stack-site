@@ -1,10 +1,12 @@
 import express from 'express'
-const  config = require('config')
 import mongoose from 'mongoose'
+import { router } from './routes/auth.routes'
 
+const config = require('config')
 const app = express()
-
 const PORT = config.get('port')
+
+app.use('api/auth/', router)
 
 const  start = async() => {
   try {
