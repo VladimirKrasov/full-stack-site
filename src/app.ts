@@ -1,15 +1,15 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import { router } from './routes/auth.routes'
+import * as bodyParser from 'body-parser'
 
 const config = require('config')
 const app = express()
 const PORT = config.get('port')
 
+// Apply midleware
+app.use(bodyParser.json())
 app.use('/api/auth/', router)
-app.get('/', function(req, res) {
-  res.send('hello world');
-});
 
 const  start = async() => {
   try {

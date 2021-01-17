@@ -2,20 +2,12 @@ import { Router, Request, Response } from 'express'
 import * as bcrypt from 'bcrypt'
 import { userModel } from '../models/User'
 import { check, validationResult } from 'express-validator'
-import * as bodyParser from 'body-parser'
-
-// create application/json parser
-var jsonParser = bodyParser.json()
-
-// create application/x-www-form-urlencoded parser
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 const router = Router()
 
 // (/api/auth/register)
 router.post(
   '/register',
-  jsonParser,
   [
     check('email', 'Invalid email address').isEmail(),
     check(
