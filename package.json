@@ -1,0 +1,8 @@
+{
+  "name": "full-stack-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/VladimirKrasov/full-stack-site.git",
+  "author": "Vladimir Krasov",
+  "license": "MIT"
+}
