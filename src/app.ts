@@ -1,8 +1,8 @@
-const exprees = require('express')
-const config = require('config')
-const mongoose = require('mongoose')
+import express from 'express'
+const  config = require('config')
+import mongoose from 'mongoose'
 
-const app = exprees()
+const app = express()
 
 const PORT = config.get('port')
 

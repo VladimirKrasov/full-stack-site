@@ -6,8 +6,9 @@
   "author": "Vladimir Krasov",
   "license": "MIT",
   "scripts": {
-    "start": "node app.ts",
-    "server": "nodemon app.ts"
+    "start": "node dst/app.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc -p ."
   },
   "dependencies": {
     "config": "^3.3.3",
