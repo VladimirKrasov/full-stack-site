@@ -5,6 +5,10 @@
   "repository": "https://github.com/VladimirKrasov/full-stack-site.git",
   "author": "Vladimir Krasov",
   "license": "MIT",
+  "scripts": {
+    "start": "node app.ts",
+    "server": "nodemone app.ts"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.11.12"
