@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node app.ts",
-    "server": "nodemone app.ts"
+    "server": "nodemon app.ts"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -18,6 +18,7 @@
     "@types/node": "^14.14.21",
     "concurrently": "^5.3.0",
     "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   }
 }
